@@ -12,7 +12,7 @@ class MeuApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.deepOrange,
+        backgroundColor: Colors.red[900],
         body: SafeArea(
           child: Column(
             children: [
@@ -23,10 +23,22 @@ class MeuApp extends StatelessWidget {
               Text(
                 'Alexandre Soares',
                 style: TextStyle(
-                    fontSize: 40.0,
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold),
-              )
+                  fontSize: 40.0,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'Pacifico',
+                ),
+              ),
+              Text(
+                'DESENVOLVEDOR FLUTTER',
+                style: TextStyle(
+                  fontFamily: 'Source Sans Pro',
+                  color: Colors.white,
+                  fontSize: 20,
+                  letterSpacing: 2.5,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
             ],
           ),
         ),
