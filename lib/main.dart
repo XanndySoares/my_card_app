@@ -15,6 +15,7 @@ class MeuApp extends StatelessWidget {
         backgroundColor: Colors.red[900],
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               CircleAvatar(
                 backgroundImage: AssetImage('images/alexandre.JPG'),
@@ -39,8 +40,10 @@ class MeuApp extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              Card(
+              Divider(
                 color: Colors.white,
+              ),
+              Card(
                 margin: EdgeInsets.symmetric(
                   vertical: 10.0,
                   horizontal: 25.0,
@@ -61,7 +64,6 @@ class MeuApp extends StatelessWidget {
                 ),
               ),
               Card(
-                color: Colors.white,
                 margin: EdgeInsets.symmetric(
                   vertical: 10.0,
                   horizontal: 25.0,
