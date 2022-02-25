@@ -39,64 +39,49 @@ class MeuApp extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              Container(
+              Card(
                 color: Colors.white,
                 margin: EdgeInsets.symmetric(
                   vertical: 10.0,
                   horizontal: 25.0,
                 ),
-                padding: EdgeInsets.all(
-                  10.0,
-                ),
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.phone,
-                      size: 25.0,
-                      color: Colors.red[900],
-                    ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
-                      '+55 94 99234-5390',
-                      style: TextStyle(
-                        color: Colors.red[900],
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    size: 25,
+                    color: Colors.red[900],
+                  ),
+                  title: Text(
+                    '+55 94 99234-5390',
+                    style: TextStyle(
+                        fontSize: 20.0,
                         fontFamily: 'Source Sans Pro',
-                        fontSize: 20,
-                      ),
-                    )
-                  ],
+                        color: Colors.red[900]),
+                  ),
                 ),
               ),
-              Container(
+              Card(
                 color: Colors.white,
                 margin: EdgeInsets.symmetric(
                   vertical: 10.0,
                   horizontal: 25.0,
                 ),
-                padding: EdgeInsets.all(10.0),
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.email,
-                      size: 25.0,
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    size: 25,
+                    color: Colors.red[900],
+                  ),
+                  title: Text(
+                    'allexandresoares28@gmail.com',
+                    style: TextStyle(
                       color: Colors.red[900],
+                      fontFamily: 'Source Sans Pro',
+                      fontSize: 20.0,
                     ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
-                      'allexandresoares28@gmail.com',
-                      style: TextStyle(
-                        color: Colors.red[900],
-                        fontFamily: 'Source Sans Pro',
-                        fontSize: 20.0,
-                      ),
-                    )
-                  ],
+                  ),
                 ),
-              )
+              ),
             ],
           ),
         ),
